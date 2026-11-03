@@ -1,6 +1,6 @@
 {
   "name": "dsh-theme-jing-chiyang",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "type": "module",
   "description": "王者荣耀「镜 · 炽阳神光」动态主题：碎裂镜面 + 炽阳金辉的全屏动态背景、金曜配色与可切换动效强度。",
   "keywords": [
@@ -20,17 +20,17 @@
     "./assets/*": "./assets/*"
   },
   "files": [
-    "index.js",
+    "LICENSE",
+    "README.md",
+    "assets/*.webp",
     "client.js",
     "cordis.patch.yml",
-    "locale/*.json",
-    "icon.svg",
-    "skin.json",
-    "README.md",
-    "LICENSE",
-    "preview.png",
     "icon-256.png",
-    "assets/*.webp"
+    "icon.svg",
+    "index.js",
+    "locale/*.json",
+    "preview.jpg",
+    "skin.json"
   ],
   "license": "MIT",
   "dsh": {

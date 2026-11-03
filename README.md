@@ -2,7 +2,7 @@
 
 王者荣耀「镜 · 炽阳神光」主题：碎裂镜面 + 炽阳金辉的动态界面外观，为 DeepSeek Harness 的 Web / 桌面图形界面提供一整套金曜配色与全屏动态背景。
 
-![主题示意](./preview.png)
+![主题示意](./preview.jpg)
 
 - 仓库：<https://github.com/AAAjzx111/dsh-theme-jing-chiyang>
 - npm：<https://www.npmjs.com/package/dsh-theme-jing-chiyang>
