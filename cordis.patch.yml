@@ -1,0 +1,6 @@
+# 「镜 · 炽阳神光」主题 bundle patch
+# 把主题插件插进当前 profile 的配置树。安装后即生效（Host 支持热挂载）。
+
+- insert:
+    - id: theme-jing-chiyang
+      name: dsh-theme-jing-chiyang
