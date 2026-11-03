@@ -8,6 +8,11 @@
 - npm：<https://www.npmjs.com/package/dsh-theme-jing-chiyang>
 - 发行版：<https://github.com/AAAjzx111/dsh-theme-jing-chiyang/releases>
 
+自 1.1.0 起，主题里嵌入了「镜 · 炽阳神光」的主视觉：它同时作为整窗底图与两个主面板的肌理，
+并按遮挡关系重绘在面板下方，文字始终压在稳定的暗色通道上。
+
+![主视觉](./assets/key-art.webp)
+
 
 ## 这是什么
 
@@ -80,6 +85,12 @@ dsh-theme-jing-chiyang/
 ├── icon.svg              # 金色镜片徽记
 └── README.md
 ```
+
+## 主视觉（1.1.0）
+
+`assets/key-art.webp` 是内联进 `client.js` 的（base64 data URI），因此主题不需要额外请求、离线可用。
+想换图：替换 `assets/key-art.webp` 后重新生成 data URI（`client.js` 顶部的 `const KEY_ART`），
+再刷新页面即可。当前是 1600px 宽、WebP q72，约 120 KB，内联后约 160 KB。
 
 ## 可调项
 
