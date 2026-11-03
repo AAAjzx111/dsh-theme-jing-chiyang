@@ -4,6 +4,11 @@
 
 ![主题示意](./preview.png)
 
+- 仓库：<https://github.com/AAAjzx111/dsh-theme-jing-chiyang>
+- npm：<https://www.npmjs.com/package/dsh-theme-jing-chiyang>
+- 发行版：<https://github.com/AAAjzx111/dsh-theme-jing-chiyang/releases>
+
+
 ## 这是什么
 
 一个标准的 DSH **bundle 插件**（Host 半区 + Client 半区）：
@@ -29,25 +34,32 @@
 
 ## 安装
 
-已安装在本机 profile（`%USERPROFILE%\.dsh\profiles\desktop`）。手动安装的做法：
+### 从 npm（推荐）
 
 ```powershell
-# 1) 把包放进 profile 的 plugins 目录
-#    %USERPROFILE%\.dsh\profiles\desktop\plugins\dsh-theme-jing-chiyang
-# 2) 在 node_modules 里建一个指向它的链接
-New-Item -ItemType Junction -Path "$env:USERPROFILE\.dsh\profiles\desktop\node_modules\dsh-theme-jing-chiyang" `
-  -Target "$env:USERPROFILE\.dsh\profiles\desktop\plugins\dsh-theme-jing-chiyang"
+dsh plugin --profile desktop add dsh-theme-jing-chiyang
 ```
 
-然后在 profile 的 `cordis.patch.yml` 末尾追加：
+Web 版把 `desktop` 换成 `web`。
 
-```yaml
-- insert:
-    - id: theme-jing-chiyang
-      name: dsh-theme-jing-chiyang
+### 从 GitHub
+
+```powershell
+dsh plugin --profile desktop add github:AAAjzx111/dsh-theme-jing-chiyang
 ```
 
-保存后 Host 会热挂载（无需重启），刷新页面即可看到主题。
+### 离线压缩包（发给不想碰命令行的人）
+
+把发行版里的 zip 解压，在解压目录执行：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
+```
+
+脚本会复制插件到 `%USERPROFILE%\.dsh\profiles\<profile>\plugins\`、在 `node_modules` 建链接、
+往 `cordis.patch.yml` 补一行挂载（先备份）。卸载：同一条命令加 `-Uninstall`。
+
+三种方式装完都要**完全退出 DSH 再打开**（只关窗口不够），主题才会挂上。
 
 ## 卸载
 
