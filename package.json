@@ -47,5 +47,13 @@
   "main": "./index.js",
   "engines": {
     "dsh": ">=0.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AAAjzx111/dsh-theme-jing-chiyang.git"
+  },
+  "homepage": "https://github.com/AAAjzx111/dsh-theme-jing-chiyang#readme",
+  "bugs": {
+    "url": "https://github.com/AAAjzx111/dsh-theme-jing-chiyang/issues"
   }
 }
